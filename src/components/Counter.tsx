@@ -1,14 +1,13 @@
 import {useState} from 'react';
-import classNames from './Counter.module.scss';
+import styles from './Counter.module.scss';
 
 const Counter = () => {
     const [count, setCount] = useState(0);
 
     try {
-        console.log(classNames.count)
-
+        console.log(styles.count)
     } catch (e) {
-        console.log(classNames, 'Ошибка')
+        console.log(styles, 'Ошибка', e)
     }
 
     return (
